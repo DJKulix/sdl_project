@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 
     // Tworzenie okna
     SDL_Window* window = SDL_CreateWindow(
-        "LAPACZ PUNKTOW",
+        "Snake",
         800, 600, 0
     );
 
@@ -46,7 +46,7 @@ int main(int argc, char* argv[])
     bool running = true;
     int score = 0;
 
-    float speed = 0.5f;
+    float speed = 0.2f;
 
     SDL_Event event;
 
@@ -103,7 +103,7 @@ int main(int argc, char* argv[])
             coin.x = static_cast<float>(std::rand() % 780);
             coin.y = static_cast<float>(std::rand() % 580);
 
-            std::string title = "LAPACZ PUNKTOW - Wynik: "
+            std::string title = "Snake - Wynik: "
                 + std::to_string(score);
 
             SDL_SetWindowTitle(window, title.c_str());

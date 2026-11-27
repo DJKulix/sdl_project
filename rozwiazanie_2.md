@@ -1,10 +1,6 @@
-Jasne\! Poniżej masz rozwiązania do poziomu 2 i poziomu 3, rozdzielone na dwa osobne materiały. Każde zadanie zawiera wyjaśnienie i fragment kodu do wykorzystania w projekcie SDL3.
 
-# Rozwiązania – poziom 2 (średni)
 
-Writing
-
-# Łapacz punktów – rozwiązania poziom 2
+# Rozwiązania –
 
 ## Zadanie 1. Dodaj drugi punkt do zebrania
 
@@ -39,8 +35,6 @@ if (SDL_HasRectIntersectionFloat(&player, &coin2))
     coin2.y = static_cast<float>(rand() % 580);
 }
 ```
-
-**Wyjaśnienie:** Drugi punkt działa tak samo jak pierwszy. Po dotknięciu przez gracza zwiększamy wynik i losujemy nowe położenie.
 
 ## Zadanie 2. Dodaj licznik czasu gry
 
@@ -184,11 +178,6 @@ Uczeń powinien rozumieć:
 - operatory matematyczne,
 - aktualizowanie zmiennych podczas działania gry.
 
-# Rozwiązania – poziom 3 (trudniejszy)
-
-Writing
-
-# Łapacz punktów – rozwiązania poziom 3
 
 ## Zadanie 1. Dodaj przeciwnika
 
@@ -347,26 +336,3 @@ SDL_SetWindowTitle(window, title.c_str());
 - `bestScore` przechowuje najwyższy wynik uzyskany podczas działania programu.
 - Przy nowej grze aktualny wynik zerujemy, ale rekordu nie.
 
-## Podsumowanie poziomu 3
-
-Uczeń powinien rozumieć:
-
-- tworzenie przeciwników,
-- kolizje między obiektami,
-- warunki końca gry,
-- zmienne logiczne,
-- resetowanie stanu gry,
-- przechowywanie najlepszego wyniku.
-
-## Ważna uwaga do prowadzenia zajęć
-
-W rozwiązaniach poziomu 3 ekran końcowy jest celowo uproszczony – pokazuje czerwone tło, bez tekstu. To dobry moment, żeby wprowadzić kolejną bibliotekę: SDL3\_ttf, która umożliwi wyświetlanie napisów, wyników i menu.
-
-Proponowana kolejność pracy:
-
-1. Najpierw uczeń sam próbuje wykonać zadanie.
-2. Następnie porównuje swój kod z rozwiązaniem.
-3. Wyjaśnia, dlaczego dana instrukcja jest potrzebna.
-4. Na końcu modyfikuje rozwiązanie według własnego pomysłu.
-
-W ten sposób nie tylko przepisuje kod, ale rzeczywiście uczy się programowania.
